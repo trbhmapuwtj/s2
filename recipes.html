@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рецепты | Кулинарные мастер-классы</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Кулинарные мастер-классы</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="recipes.html">Рецепты</a></li>
+                    <li><a href="masters.html">Мастера</a></li>
+                    <li><a href="schedule.html">Расписание</a></li>
+                    <li><a href="profile.html">Профиль</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Все рецепты</h2>
+        
+        <div class="filters">
+            <select id="category-filter">
+                <option value="all">Все категории</option>
+                <option value="breakfast">Завтраки</option>
+                <option value="main">Основные блюда</option>
+                <option value="dessert">Десерты</option>
+                <option value="bakery">Выпечка</option>
+            </select>
+            
+            <select id="difficulty-filter">
+                <option value="all">Любая сложность</option>
+                <option value="easy">Легко</option>
+                <option value="medium">Средне</option>
+                <option value="hard">Сложно</option>
+            </select>
+        </div>
+        
+        <div class="recipes-grid" id="all-recipes">
+            <!-- Заполняется через JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Кулинарные мастер-классы</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

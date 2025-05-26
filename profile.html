@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой профиль | Кулинарные мастер-классы</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Кулинарные мастер-классы</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="recipes.html">Рецепты</a></li>
+                    <li><a href="masters.html">Мастера</a></li>
+                    <li><a href="schedule.html">Расписание</a></li>
+                    <li><a href="profile.html">Профиль</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="profile-header">
+            <h2>Мой профиль</h2>
+            <button class="btn" onclick="editProfile()">Редактировать</button>
+        </div>
+        
+        <div class="profile-info" id="user-profile">
+            <div class="user-details">
+                <h3 id="user-name">Новикова Мария</h3>
+                <p><strong>Email:</strong> <span id="user-email">novikova_maria@gmail.com</span></p>
+            </div>
+        </div>
+        
+        <div class="profile-sections">
+            <section class="saved-recipes">
+                <h3>Сохраненные рецепты</h3>
+                <div class="recipes-grid" id="saved-recipes">
+                    <!-- Заполняется через JavaScript -->
+                </div>
+            </section>
+            
+            <section class="my-classes">
+                <h3>Мои мастер-классы</h3>
+                <div class="classes-list" id="user-classes">
+                    <!-- Заполняется через JavaScript -->
+                </div>
+            </section>
+            
+            <section class="recommendations">
+                <h3>Рекомендации для вас</h3>
+                <div class="recipes-grid" id="recommended-recipes">
+                    <!-- Заполняется через JavaScript -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Кулинарные мастер-классы</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

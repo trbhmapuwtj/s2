@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание | Кулинарные мастер-классы</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Кулинарные мастер-классы</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="recipes.html">Рецепты</a></li>
+                    <li><a href="masters.html">Мастера</a></li>
+                    <li><a href="schedule.html">Расписание</a></li>
+                    <li><a href="profile.html">Профиль</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Расписание мастер-классов</h2>
+        
+        <div class="filters">
+            <select id="date-filter">
+                <option value="all">Все даты</option>
+                <option value="this-week">На этой неделе</option>
+                <option value="this-month">В этом месяце</option>
+            </select>
+            
+            <select id="price-filter">
+                <option value="all">Любая цена</option>
+                <option value="0-1000">До 1000 руб.</option>
+                <option value="1000-2000">1000-2000 руб.</option>
+                <option value="2000+">От 2000 руб.</option>
+            </select>
+            
+            <select id="cuisine-filter">
+                <option value="all">Все кухни</option>
+                <option value="italian">Итальянская</option>
+                <option value="french">Французская</option>
+                <option value="asian">Азиатская</option>
+                <option value="russian">Русская</option>
+            </select>
+        </div>
+        
+        <div class="classes-list" id="classes-list">
+            <!-- Заполняется через JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Кулинарные мастер-классы</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
